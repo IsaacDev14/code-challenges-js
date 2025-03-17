@@ -1,20 +1,114 @@
-body{
-    background-color: #f0f0f0;
+/* General Styles */
+body {
     font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f3f4f6, #dfe4ea);
     margin: 0;
     padding: 0;
-}
-header{
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures scrolling when content is long */
+    overflow-y: auto; /* Allows scrolling */
 }
 
-.container{
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 2px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Section Styling */
+section {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #4CAF50;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    min-height: 80px; /* Ensures all sections are visible */
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+h4 {
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Buttons */
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 50%;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Submit Button */
+#submit {
+    margin-top: 15px;
+    background: #007BFF;
+}
+
+#submit:hover {
+    background: #0056b3;
+}
+
+/* Result Display */
+p {
+    font-weight: bold;
+    color: #333;
+    background: #e8f5e9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: block; /* Ensure results are always visible */
+    min-height: 20px; /* Prevents collapse if empty */
 }
