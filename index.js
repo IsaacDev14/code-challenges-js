@@ -89,7 +89,7 @@ function task6(){
     let tuple2 = tuple.slice(tuple.length/2);
 
     let result = document.getElementById("task-6");
-    result.innerText = `Tuple 1: ${tuple1}, Tuple 2: ${tuple2}`;
+    result.innerText = `First Tuple is: ${tuple1}, Second Tuple is: ${tuple2}`;
     result.style.display = "block";
 }
 
